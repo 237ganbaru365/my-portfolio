@@ -29,10 +29,8 @@ export default function Navbar() {
           >
             {menu.map(({ name, url }, key) => {
               return (
-                <li>
-                  <Link key={key} to={url}>
-                    {name}
-                  </Link>
+                <li key={key}>
+                  <Link to={url}>{name}</Link>
                 </li>
               );
             })}
