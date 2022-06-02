@@ -37,4 +37,15 @@ module.exports = {
       fileName: "resume.pdf", // the file has to be placed inside the static folder at the root level
     },
   },
+
+  skills: [
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "Sass",
+    "Gatsby",
+    "Webpack",
+    "GraphQL",
+    "MongoDB",
+  ],
 };
