@@ -1,8 +1,8 @@
 import React from "react";
-import Footer from "./footer";
+import Footer from "./Footer";
 
-import Head from "./head";
-import Navbar from "./navbar";
+import Head from "./Head";
+import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
   return (

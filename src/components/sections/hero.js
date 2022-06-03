@@ -3,7 +3,7 @@ import { socialMedia } from "../../config";
 
 export default function Hero() {
   return (
-    <section style={{ width: "100%", height: "100vh" }}>
+    <section>
       <div>
         <h1>Hi, my name is</h1>
         <h2>Fumina Yoshimura.</h2>
@@ -12,7 +12,7 @@ export default function Hero() {
       <ul>
         {socialMedia.map((socialMediaItem, key) => (
           <li key={key}>
-            <a href={socialMediaItem.url} target="_blank">
+            <a href={socialMediaItem.url} target="_blank" rel="noreferrer">
               {socialMediaItem.name}
             </a>
           </li>

@@ -10,6 +10,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, // Needed for dynamic images
+    `gatsby-transformer-sharp`,
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `project`,
+        path: `${__dirname}/content/project`,
+      },
+    },
+    `gatsby-plugin-mdx`, // Needed for dynamic images
   ],
 };

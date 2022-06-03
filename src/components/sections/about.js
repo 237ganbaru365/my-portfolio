@@ -1,10 +1,10 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image"; // this is for image in any component not pages
+// import { StaticImage } from "gatsby-plugin-image"; // this is for image in any component not pages
 import { skills } from "../../config";
 
 export default function About() {
   return (
-    <section style={{ width: "100%", height: "100vh" }}>
+    <section>
       <h2>About Me</h2>
       <div>
         <div>
@@ -19,7 +19,7 @@ export default function About() {
         </ul>
       </div>
       <div>
-        <StaticImage />
+        {/* <StaticImage /> */}
         {/* you need add own img later */}
       </div>
     </section>
