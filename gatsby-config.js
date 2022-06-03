@@ -18,6 +18,19 @@ module.exports = {
         path: `${__dirname}/content/project`,
       },
     },
-    `gatsby-plugin-mdx`, // Needed for dynamic images
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Fumina Yoshimura Portfolio Site`,
+        short_name: `Fumina Web`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-postcss`,
   ],
 };
