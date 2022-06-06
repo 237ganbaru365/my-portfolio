@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .FlexCenter {
+    @apply flex items-center justify-center;
+  }
+  .FlexAlign {
+    @apply flex items-center;
+  }
+  .FlexJustify {
+    @apply flex justify-center;
+  }
+  .NavBase {
+    @apply h-16 min-w-full flex items-center justify-between px-8 fixed top-0 left-0 backdrop-blur;
+  }
+  .Hover {
+    @apply transform hover:-translate-y-1 duration-300;
+  }
+}

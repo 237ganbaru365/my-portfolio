@@ -24,7 +24,7 @@ export default function Projects() {
   console.log(projects);
 
   return (
-    <section>
+    <section id="projects" className="mt-16">
       <h2>My Projects</h2>
       <ul>
         {projects.map((project, i) => {

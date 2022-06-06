@@ -6,11 +6,11 @@ import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className="position relative">
       <Head />
       <Navbar />
-      <main className="pt-16">{children}</main>
+      <main className="max-w-[80%] mx-auto mb-16">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }

@@ -7,11 +7,10 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
     },
+    extend: {},
   },
   plugins: [],
 };

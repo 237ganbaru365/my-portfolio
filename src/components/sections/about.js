@@ -4,7 +4,7 @@ import { skills } from "../../config";
 
 export default function About() {
   return (
-    <section>
+    <section id="about" className="mt-16">
       <h2>About Me</h2>
       <div>
         <div>
