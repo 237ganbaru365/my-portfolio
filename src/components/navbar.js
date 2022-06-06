@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-
 import { navLinks } from "../config";
-import Hamberger from "./icons/Hamberger";
+import ModalMenu from "./ModalMenu";
 
 export default function Navbar() {
   const { menu, button } = navLinks;
@@ -37,7 +36,7 @@ export default function Navbar() {
             )}
           </div>
         </div>
-        <Hamberger />
+        <ModalMenu />
       </nav>
     </header>
   );
