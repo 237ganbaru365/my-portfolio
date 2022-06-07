@@ -32,13 +32,13 @@ export default function Projects() {
           const { external, title, tech, github, cover, description } =
             frontmatter;
           console.log(cover);
-          const image = getImage(cover);
+          // const image = getImage(cover);
 
           return (
             <li key={i} className="mb-8">
               <div className="project-image">
                 <a href={external ? external : github ? github : "#"}>
-                  <GatsbyImage image={image} alt={title} />
+                  {/* <GatsbyImage image={image} alt={title} /> */}
                 </a>
               </div>
               <div className="project-content bg-slate-200 p-6 rounded-md">
