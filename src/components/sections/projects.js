@@ -31,24 +31,23 @@ export default function Projects() {
           const { frontmatter } = project;
           const { external, title, tech, github, cover, description } =
             frontmatter;
+          console.log(cover);
           const image = getImage(cover);
 
           return (
-            <li key={i} className="mb-8 bg-slate-200 p-6 rounded-md">
-              <div className="project-content">
+            <li key={i} className="mb-8">
+              <div className="project-image">
+                <a href={external ? external : github ? github : "#"}>
+                  <GatsbyImage image={image} alt={title} />
+                </a>
+              </div>
+              <div className="project-content bg-slate-200 p-6 rounded-md">
                 <div>
                   <h4>Personal Project</h4>
                   <h3>
                     <a href={external}>{title}</a>
                   </h3>
-
-                  <div>
-                    {/* <StaticImage /> */}
-                    {/* you need add own img later */}
-                  </div>
-
                   <div className="mb-4">{description}</div>
-
                   <ul className="flex flex-wrap mb-4 text-xs text-gray-800">
                     {tech.map((techItem, i) => (
                       <li key={i} className="mr-4">
@@ -66,11 +65,6 @@ export default function Projects() {
                     </a>
                   </div>
                 </div>
-              </div>
-              <div className="project-image">
-                <a href={external ? external : github ? github : "#"}>
-                  <GatsbyImage image={image} alt={title} className="img" />
-                </a>
               </div>
             </li>
           );

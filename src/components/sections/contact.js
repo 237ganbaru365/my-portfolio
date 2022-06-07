@@ -9,10 +9,10 @@ export default function Contact() {
       <p className="Hover">
         <a href="tel://12369795203">+1 (236) 979 5203</a>
       </p>
-      <p className="Hover">
+      <p className="Hover mb-6">
         <a href={`mailto:${email}`}>{email}</a>
       </p>
-      <ul className="mt-6 FlexJustify text-gray-800 lg:justify-start">
+      <ul className="FlexJustify text-gray-800 lg:justify-start">
         {socialMedia.map((socialMediaItem, key) => (
           <li
             key={key}

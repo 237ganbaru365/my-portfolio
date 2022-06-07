@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer base {
+  h1 {
+    @apply text-4xl tracking-tight font-extrabold md:text-6xl;
+  }
   h2 {
     @apply text-2xl font-bold mb-8;
   }
@@ -13,6 +16,9 @@
   }
   h4 {
     @apply text-sm text-gray-400;
+  }
+  p {
+    @apply mb-4;
   }
   section {
     @apply mb-16 p-6;
@@ -30,7 +36,7 @@
     @apply flex justify-center;
   }
   .NavBase {
-    @apply h-16 min-w-full flex items-center justify-between px-8 fixed top-0 left-0 backdrop-blur;
+    @apply h-16 min-w-full flex items-center justify-between px-8 fixed top-0 left-0 z-30 backdrop-blur;
   }
   .Hover {
     @apply transform hover:-translate-y-1 duration-300;
