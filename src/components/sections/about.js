@@ -6,10 +6,10 @@ import Icon from "../icons/Icon";
 export default function About() {
   return (
     <section id="about" className="pt-20">
-      <h2 className="text-2xl font-bold">About Me</h2>
-      <div className="container md:flex md:justify-between">
+      <h2>Who is she?</h2>
+      <div className="md:flex md:justify-between">
         <div className="mb-8 md:w-1/2 md:mr-16">
-          <div className="mb-4">
+          <div className="mb-8">
             <p>
               Hello! My name is Fumina. this is first text t is a long
               established fact that a reader will be distracted by the readable
@@ -37,14 +37,19 @@ export default function About() {
             ))}
           </ul>
         </div>
-        <div className="FlexCenter md:flex-1 md:max-w-sm md:items-start">
-          <StaticImage
-            src="../../images/me.jpg"
-            alt="profile"
-            width={500}
-            quality={95}
-            formats={["AUTO", "WEBP", "AVIF"]}
-          />
+        <div className="relative h-full">
+          <div className="FlexCenter ImgHover md:flex-1 md:max-w-sm md:items-start">
+            <StaticImage
+              src="../../images/me.jpg"
+              alt="profile"
+              imgClassName="rounded-md"
+              width={500}
+              quality={95}
+              // transformOptions={{ grayscale: true }}
+              formats={["AUTO", "WEBP", "AVIF"]}
+            />
+          </div>
+          <div className="w-full h-full border-4 rounded-md border-gray-300 absolute top-4 left-4 -z-10"></div>
         </div>
       </div>
     </section>

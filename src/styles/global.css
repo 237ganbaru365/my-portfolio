@@ -9,16 +9,16 @@
     @apply text-4xl tracking-tight font-extrabold md:text-6xl;
   }
   h2 {
-    @apply text-2xl font-bold mb-8;
+    @apply text-3xl font-bold mb-8;
   }
   h3 {
-    @apply text-xl font-bold mb-8;
+    @apply text-2xl font-bold mb-8;
   }
   h4 {
     @apply text-sm text-gray-400;
   }
   p {
-    @apply mb-4;
+    @apply mb-4 text-gray-700;
   }
   section {
     @apply mb-16 p-6;
@@ -47,7 +47,7 @@
   .Logo {
     @apply text-4xl font-hina font-extrabold text-gray-100 bg-gray-900 rounded-full leading-9 p-2;
   }
-  .StickySection {
-    @apply sticky top-0 h-screen flex flex-col items-center justify-center;
+  .ImgHover {
+    @apply transform transition duration-500 hover:scale-95 brightness-50 hover:brightness-100 hover:drop-shadow-lg shadow-gray-600;
   }
 }

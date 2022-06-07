@@ -5,7 +5,7 @@ import Icon from "../icons/Icon";
 export default function Contact() {
   return (
     <section id="contact" className="text-center">
-      <h2>Reach Me</h2>
+      <h1 className="mb-16">Reach Me</h1>
       <p className="Hover">
         <a href="tel://12369795203">+1 (236) 979 5203</a>
       </p>
