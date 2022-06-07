@@ -26,7 +26,7 @@ export default function About() {
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
-          <ul className="w-1/2 grid grid-cols-2 gap-4 text-xs">
+          <ul className="w-1/2 grid grid-cols-2 gap-4 text-xs font-mono">
             {skills.map((skill, key) => (
               <li key={key} className="FlexAlign">
                 <span className="mr-2 text-xs">

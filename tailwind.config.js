@@ -9,6 +9,8 @@ module.exports = {
     },
     fontFamily: {
       hina: ["Hina Mincho", "serif"],
+      mono: ["Fira Code", "serif"],
+      montserrat: ["Montserrat", "sans-serif"],
     },
     extend: {},
   },

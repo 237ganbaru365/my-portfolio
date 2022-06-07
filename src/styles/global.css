@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  /* body {
+    @apply font-montserrat;
+  } */
   h1 {
     @apply text-4xl tracking-tight font-extrabold md:text-6xl;
   }
@@ -45,7 +50,7 @@
     @apply overflow-auto h-full;
   }
   .Logo {
-    @apply text-4xl font-hina font-extrabold text-gray-100 bg-gray-900 rounded-full leading-9 p-2;
+    @apply w-12 h-12 text-4xl font-hina font-extrabold text-gray-100 bg-gray-900 rounded-full;
   }
   .ImgHover {
     @apply transform transition duration-500 hover:scale-95 brightness-50 hover:brightness-100 hover:drop-shadow-lg shadow-gray-600;

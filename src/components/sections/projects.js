@@ -45,13 +45,16 @@ export default function Projects() {
               key={i}
               className="mb-24 bg-gray-300 bg-opacity-30 p-8 rounded-md md:mb-0 md:flex-none md:w-2/3 md:mr-8"
             >
-              <h4>Personal Project</h4>
+              <h4 className="font-mono">Personal Project</h4>
               <h3 className="mb-4">
                 <a href={external}>{title}</a>
               </h3>
               <ul className="flex flex-wrap mb-4 text-sm text-gray-800">
                 {tech.map((techItem, i) => (
-                  <li key={i} className="mr-4 bg-white p-2 rounded-md mb-2">
+                  <li
+                    key={i}
+                    className="mr-4 bg-white p-2 rounded-md mb-2 font-mono"
+                  >
                     {techItem}
                   </li>
                 ))}

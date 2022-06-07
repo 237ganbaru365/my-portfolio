@@ -8,10 +8,10 @@ export default function Navbar() {
   return (
     <header className="text-gray-900">
       <nav className="NavBase">
-        <div className="Hover Logo">
-          <Link to="/">ふ</Link>
+        <div className="Hover Logo FlexCenter">
+          <Link to="/"></Link>
         </div>
-        <div className="hidden md:FlexAlign">
+        <div className="hidden md:FlexAlign font-mono">
           <ul className="flex mr-2">
             {menu.map(({ name, url }, key) => {
               return (
@@ -21,7 +21,7 @@ export default function Navbar() {
               );
             })}
           </ul>
-          <div className=" text-gray-800 py-2 px-4 rounded-md border-2 border-gray-800 Hover hover:bg-gray-200">
+          <div className=" text-gray-800 py-2 px-4 rounded-md border-2 border-gray-800 Hover hover:bg-gray-300">
             {button.useFileName ? (
               <a
                 className="cta-btn"
