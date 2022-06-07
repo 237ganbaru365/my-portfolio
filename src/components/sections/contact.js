@@ -12,7 +12,7 @@ export default function Contact() {
       <p className="Hover mb-6">
         <a href={`mailto:${email}`}>{email}</a>
       </p>
-      <ul className="FlexJustify text-gray-800 lg:justify-start">
+      <ul className="FlexJustify text-gray-800">
         {socialMedia.map((socialMediaItem, key) => (
           <li
             key={key}

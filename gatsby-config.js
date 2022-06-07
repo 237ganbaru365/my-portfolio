@@ -16,7 +16,13 @@ module.exports = {
       options: {
         name: `project`,
         path: `${__dirname}/content/project`,
-        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-plugin-mdx`,

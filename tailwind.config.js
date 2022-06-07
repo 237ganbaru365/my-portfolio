@@ -8,7 +8,7 @@ module.exports = {
       xl: "1440px",
     },
     fontFamily: {
-      poppins: ["Poppins", "sans-serif"],
+      hina: ["Hina Mincho", "serif"],
     },
     extend: {},
   },

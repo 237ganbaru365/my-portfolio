@@ -16,7 +16,10 @@ export default function Hero() {
         </div>
         <ul className="text-gray-800 FlexJustify md:justify-start">
           {socialMedia.map((socialMediaItem, key) => (
-            <li key={key} className="mr-5 justify-self-center text-gray-800">
+            <li
+              key={key}
+              className="mr-5 justify-self-center text-gray-800 Hover"
+            >
               <a
                 href={socialMediaItem.url}
                 target="_blank"

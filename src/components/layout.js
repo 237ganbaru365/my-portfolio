@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     <>
       <Head />
       <Navbar />
-      <main className="max-w-[80%] mx-auto mb-16">{children}</main>
+      <main className="max-w-[80%] mx-auto mb-16 relative">{children}</main>
       <Footer />
     </>
   );

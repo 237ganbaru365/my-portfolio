@@ -8,8 +8,8 @@ export default function Navbar() {
   return (
     <header className="text-gray-900">
       <nav className="NavBase">
-        <div className="Hover">
-          <Link to="/">Logo to Home</Link>
+        <div className="Hover Logo">
+          <Link to="/">ふ</Link>
         </div>
         <div className="hidden md:FlexAlign">
           <ul className="flex mr-2">
@@ -21,7 +21,7 @@ export default function Navbar() {
               );
             })}
           </ul>
-          <div className="bg-gray-600 text-white py-2 px-4  rounded-md Hover">
+          <div className=" text-gray-800 py-2 px-4 rounded-md border-2 border-gray-800 Hover hover:bg-gray-200">
             {button.useFileName ? (
               <a
                 className="cta-btn"

@@ -5,7 +5,7 @@ import Icon from "../icons/Icon";
 
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="pt-20">
       <h2 className="text-2xl font-bold">About Me</h2>
       <div className="container md:flex md:justify-between">
         <div className="mb-8 md:w-1/2 md:mr-16">

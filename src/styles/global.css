@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -43,5 +43,11 @@
   }
   .IsOpen {
     @apply overflow-auto h-full;
+  }
+  .Logo {
+    @apply text-4xl font-hina font-extrabold text-gray-100 bg-gray-900 rounded-full leading-9 p-2;
+  }
+  .StickySection {
+    @apply sticky top-0 h-screen flex flex-col items-center justify-center;
   }
 }
