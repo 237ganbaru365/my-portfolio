@@ -1,6 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Icon from "../icons/Icon";
 
 export default function Projects() {
   const data = useStaticQuery(graphql`
@@ -21,10 +22,9 @@ export default function Projects() {
   `);
 
   const projects = data.allMdx.nodes;
-  console.log(projects);
 
   return (
-    <section id="projects" className="mt-16">
+    <section id="projects">
       <h2>My Projects</h2>
       <ul>
         {projects.map((project, i) => {
@@ -34,26 +34,36 @@ export default function Projects() {
           const image = getImage(cover);
 
           return (
-            <li key={i}>
+            <li key={i} className="mb-8 bg-slate-200 p-6 rounded-md">
               <div className="project-content">
                 <div>
-                  <p>Personal Project</p>
-
+                  <h4>Personal Project</h4>
                   <h3>
                     <a href={external}>{title}</a>
                   </h3>
 
-                  <div>{description}</div>
+                  <div>
+                    {/* <StaticImage /> */}
+                    {/* you need add own img later */}
+                  </div>
 
-                  <ul>
+                  <div className="mb-4">{description}</div>
+
+                  <ul className="flex flex-wrap mb-4 text-xs text-gray-800">
                     {tech.map((techItem, i) => (
-                      <li key={i}>{techItem}</li>
+                      <li key={i} className="mr-4">
+                        {techItem}
+                      </li>
                     ))}
                   </ul>
 
-                  <div>
-                    <a href={github}>Github</a>
-                    <a href={external}>Site Link</a>
+                  <div className="FlexAlign mb-4">
+                    <a href={github} className="mr-2 Hover">
+                      <Icon name={"GitHub"} />
+                    </a>
+                    <a href={external} className="Hover">
+                      <Icon name={"External"} />
+                    </a>
                   </div>
                 </div>
               </div>

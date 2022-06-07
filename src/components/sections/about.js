@@ -5,18 +5,20 @@ import Icon from "../icons/Icon";
 
 export default function About() {
   return (
-    <section id="about" className="text-center">
-      <h2 className="text-2xl">About Me</h2>
-      <div className="mt-8">
-        <div>
-          <p>Hello! My name is Fumina. this is first text</p>
+    <section id="about">
+      <h2 className="text-2xl font-bold">About Me</h2>
+      <div className="container">
+        <div className="mb-4">
+          <p>Hello! My name is Fumina. this is first text </p>
           <p>this is second text</p>
           <p>this is third text</p>
         </div>
-        <ul className="w-1/2 mx-auto mt-4 grid grid-cols-2 gap-4 text-sm">
+        <ul className="w-1/2 grid grid-cols-2 gap-4 text-xs">
           {skills.map((skill, key) => (
             <li key={key} className="FlexAlign">
-              <Icon name={"ArrowRight"} className="mr-5" />
+              <span className="mr-2 text-xs">
+                <Icon name={"ArrowRight"} />{" "}
+              </span>
               {skill}
             </li>
           ))}

@@ -4,6 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h2 {
+    @apply text-2xl font-bold mb-8;
+  }
+  h3 {
+    @apply text-xl font-bold mb-8;
+  }
+  h4 {
+    @apply text-sm text-gray-400;
+  }
+  section {
+    @apply mb-16 p-6;
+  }
+}
+
 @layer components {
   .FlexCenter {
     @apply flex items-center justify-center;
@@ -19,5 +34,8 @@
   }
   .Hover {
     @apply transform hover:-translate-y-1 duration-300;
+  }
+  .IsOpen {
+    @apply overflow-auto h-full;
   }
 }

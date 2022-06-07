@@ -1,16 +1,34 @@
 import React from "react";
-import { email } from "../../config";
+import { email, socialMedia } from "../../config";
+import Icon from "../icons/Icon";
 
 export default function Contact() {
   return (
-    <section id="contact" className="mt-16">
+    <section id="contact" className="text-center">
       <h2>Reach Me</h2>
-      <p>
+      <p className="Hover">
         <a href="tel://12369795203">+1 (236) 979 5203</a>
       </p>
-      <p>
+      <p className="Hover">
         <a href={`mailto:${email}`}>{email}</a>
       </p>
+      <ul className="mt-6 FlexJustify text-gray-800 lg:justify-start">
+        {socialMedia.map((socialMediaItem, key) => (
+          <li
+            key={key}
+            className="mr-5 justify-self-center text-gray-800 Hover"
+          >
+            <a
+              href={socialMediaItem.url}
+              target="_blank"
+              rel="noreferrer"
+              className="text-2xl"
+            >
+              <Icon name={socialMediaItem.name} />
+            </a>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
