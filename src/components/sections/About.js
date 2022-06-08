@@ -24,7 +24,7 @@ export default function About() {
               its layout. The point of using Lorem Ipsum is that it has a
               more-or-less normal distribution of letters, as opposed to using
             </p>
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>My tech skills;</p>
           </div>
           <ul className="w-1/2 grid grid-cols-2 gap-4 text-xs font-mono md:w-full lg:w-1/2">
             {skills.map((skill, key) => (

@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="mb-6">
           <p className="text-gray-500 mb-5 font-mono">Hi, I am</p>
           <h1 className="mb-5">Fumina Yoshimura.</h1>
-          <h1 className="mb-5 text-gray-500">I build things for the web.</h1>
+          <h1 className="mb-5 text-gray-500">I do not be afraid of change.</h1>
           <p className="text-gray-800">
             A front-end developer based in Vancouver.
           </p>
