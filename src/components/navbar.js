@@ -8,9 +8,7 @@ export default function Navbar() {
   return (
     <header className="text-gray-900">
       <nav className="NavBase">
-        <div className="Hover Logo FlexCenter">
-          <Link to="/"></Link>
-        </div>
+        <Link to="/" className="Hover Logo FlexCenter"></Link>
         <div className="hidden md:FlexAlign font-mono">
           <ul className="flex mr-2">
             {menu.map(({ name, url }, key) => {
@@ -21,7 +19,7 @@ export default function Navbar() {
               );
             })}
           </ul>
-          <div className=" text-gray-800 py-2 px-4 rounded-md border-2 border-gray-800 Hover hover:bg-gray-300">
+          <div className=" text-gray-800 py-2 px-4 rounded-md border-2 border-gray-800 Hover hover:bg-gray-800 hover:text-gray-300">
             {button.useFileName ? (
               <a
                 className="cta-btn"

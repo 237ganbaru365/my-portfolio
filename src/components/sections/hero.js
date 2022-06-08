@@ -14,7 +14,7 @@ export default function Hero() {
             A front-end developer based in Vancouver.
           </p>
         </div>
-        <ul className="text-gray-800 FlexJustify md:justify-start">
+        <ul className="text-gray-800 FlexJustify justify-start">
           {socialMedia.map((socialMediaItem, key) => (
             <li
               key={key}

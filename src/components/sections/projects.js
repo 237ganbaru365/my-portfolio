@@ -73,10 +73,10 @@ export default function Projects() {
               </div>
 
               <div className="FlexAlign mb-4">
-                <a href={github} className="mr-2 Hover">
+                <a href={github} className="mr-2 Hover text-2xl">
                   <Icon name={"GitHub"} />
                 </a>
-                <a href={external} className="Hover">
+                <a href={external} className="Hover text-2xl">
                   <Icon name={"External"} />
                 </a>
               </div>
