@@ -14,18 +14,18 @@ function ModalMenu() {
     <>
       <Hamberger menuHandler={menuHandler} isOpen={isOpen} />
       {isOpen && (
-        <div className="bg-gray-300 fixed top-0 right-0 w-2/3 h-screen FlexCenter">
+        <div className="bg-gray-300 fixed top-0 right-0 w-2/3 h-screen FlexCenter font-mono">
           <div className="w-full my-0 mx-auto text-center p-8">
             <ul className="mb-8">
               {menu.map(({ name, url }, key) => {
                 return (
-                  <li key={key} className="Hover mb-2">
+                  <li key={key} className="Hover mb-2 text-2xl text-gray-700">
                     <Link to={url}>{name}</Link>
                   </li>
                 );
               })}
             </ul>
-            <div className="w-2/5 mx-auto bg-gray-600 text-white py-2 px-4  rounded-md Hover">
+            <div className="w-2/5 mx-auto text-gray-800 py-2 px-4 rounded-md border-2 border-gray-800 hover:bg-gray-700 transition transform hover:text-gray-200">
               {button.useFileName ? (
                 <a
                   className="cta-btn"

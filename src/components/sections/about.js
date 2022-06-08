@@ -8,7 +8,7 @@ export default function About() {
     <section id="about" className="pt-20">
       <h2>Who is she?</h2>
       <div className="md:flex md:justify-between">
-        <div className="mb-8 md:w-1/2 md:mr-16">
+        <div className="mb-8 md:w-4/5 md:mr-16 lg:w-2/3">
           <div className="mb-8">
             <p>
               Hello! My name is Fumina. this is first text t is a long
@@ -26,7 +26,7 @@ export default function About() {
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
-          <ul className="w-1/2 grid grid-cols-2 gap-4 text-xs font-mono">
+          <ul className="w-1/2 grid grid-cols-2 gap-4 text-xs font-mono md:w-full lg:w-1/2">
             {skills.map((skill, key) => (
               <li key={key} className="FlexAlign">
                 <span className="mr-2 text-xs">
