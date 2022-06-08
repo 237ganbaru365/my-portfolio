@@ -26,7 +26,7 @@ export default function About() {
             </p>
             <p>My tech skills;</p>
           </div>
-          <ul className="w-1/2 grid grid-cols-2 gap-4 text-xs font-mono md:w-full lg:w-1/2">
+          <ul className="w-full grid grid-cols-2 gap-4 text-xs font-mono lg:w-1/2">
             {skills.map((skill, key) => (
               <li key={key} className="FlexAlign">
                 <span className="mr-2 text-xs">
@@ -43,7 +43,7 @@ export default function About() {
               src="../../images/me.jpg"
               alt="profile"
               imgClassName="rounded-md"
-              width={500}
+              width={600}
               quality={95}
               // transformOptions={{ grayscale: true }}
               formats={["AUTO", "WEBP", "AVIF"]}

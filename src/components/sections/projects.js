@@ -43,7 +43,7 @@ export default function Projects() {
           return (
             <li
               key={i}
-              className="mb-24 bg-gray-300 bg-opacity-30 p-8 rounded-md md:mb-0 md:flex-none md:w-2/3 md:mr-8"
+              className="mb-10 bg-gray-300 bg-opacity-30 p-4 rounded-md md:mb-0 md:flex-none md:w-2/3 md:mr-8 md:p-8"
             >
               <h4 className="font-mono">Personal Project</h4>
               <h3 className="mb-4">
