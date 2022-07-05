@@ -27,7 +27,6 @@ export default function Projects() {
     }
   `);
   const projects = data.allMdx.edges;
-  // console.log(projects);
 
   return (
     <section id="projects" className="pt-20">
@@ -65,6 +64,7 @@ export default function Projects() {
                   <GatsbyImage
                     image={image}
                     alt={title}
+                    height={200}
                     imgClassName="rounded-md"
                   />
                 </a>
