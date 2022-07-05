@@ -38,6 +38,7 @@ export default function Projects() {
           const { frontmatter } = node;
           const { external, title, tech, github, description, featuredImage } =
             frontmatter;
+
           const image = getImage(featuredImage.childImageSharp);
 
           return (
