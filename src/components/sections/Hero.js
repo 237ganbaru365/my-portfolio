@@ -7,12 +7,12 @@ export default function Hero() {
     <section id="top" className="h-screen FlexAlign">
       <div className="container">
         <div className="mb-6">
-          <p className="text-gray-500 mb-5 font-mono">Hi, I am</p>
+          <p className="text-gray-500 mb-5 font-mono text-2xl">Hi, I am</p>
           <h1 className="mb-5">Fumina Yoshimura.</h1>
           <h1 className="mb-5 text-gray-500">
-            I never be afraid of any change.
+            I am never afraid of challenges.
           </h1>
-          <p className="text-gray-800">
+          <p className="text-gray-800 text-2xl">
             A front-end developer based in Vancouver.
           </p>
         </div>
