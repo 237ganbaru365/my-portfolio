@@ -12,7 +12,6 @@ function Cursor() {
       setMouseX(event.clientX);
       setMouseY(event.clientY);
     };
-
     window.addEventListener("mousemove", mouseMoveListener);
 
     const ramNum = Math.floor(Math.random() * 3);
@@ -27,12 +26,12 @@ function Cursor() {
     };
   }, []);
 
-  console.log(color, shape);
-
   return (
     <div
       className={`pointer ${color} ${shape}`}
-      style={{ transform: `translate(${mouseX}px, ${mouseY}px)` }}
+      style={{
+        transform: `translate(${mouseX - 650}px, ${mouseY - 500}px)`,
+      }}
     ></div>
   );
 }

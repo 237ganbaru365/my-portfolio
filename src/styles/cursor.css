@@ -1,14 +1,16 @@
+/* mouse starker */
 .pointer {
   width: 500px;
   height: 500px;
-  position: fixed;
-  top: -20px;
-  left: -20px;
+  position: absolute;
+  top: -500;
+  left: 500;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.001s transform;
   pointer-events: none;
   z-index: -99;
 }
 
+/* shape */
 .isCircle {
   border-radius: 50%;
 }
@@ -17,6 +19,7 @@
   clip-path: polygon(100% 0%, 0 0, 50% 100%);
 }
 
+/* color */
 .isYellow {
   background: #f4df4eff;
 }
@@ -27,11 +30,4 @@
 
 .isPink {
   background: #d85a7fff;
-}
-
-@media (min-width: 768px) {
-  .pointer {
-    width: 1000px;
-    height: 1000px;
-  }
 }
